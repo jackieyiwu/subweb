@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",
@@ -34,6 +36,7 @@
     "prettier": "^3.8.1",
     "unplugin-auto-import": "^21.0.0",
     "unplugin-vue-components": "^31.0.0",
-    "webpack-dev-server": ">=5.2.3"
+    "webpack-dev-server": ">=5.2.3",
+    "wrangler": "^4.80.0"
   }
 }
