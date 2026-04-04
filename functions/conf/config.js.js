@@ -39,11 +39,11 @@ export async function onRequest(context) {
 
                 {
             value: 'https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Lite.ini',
-            text: 'A大轻量',
+            text: '无泄露DNS小杯',
         },
                {
             value: 'https://github.com/pzyyll/Custom_OpenClash_Rules/blob/main/cfg/Custom_Clash.ini',
-            text: 'A大标准',
+            text: '无泄露DNS中杯',
         },
     ];
 
