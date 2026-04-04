@@ -12,12 +12,16 @@ export async function onRequest(context) {
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
     let apiBackends = [
         {
-            name: '本地服务',
+            name: 'play4fun',
             url: apiUrl,
         },
         {
-            name: '官方服务',
+            name: 'xeton',
             url: 'https://sub.xeton.dev',
+        },
+          {
+            name: 'asailor',
+            url: 'https://https://api.asailor.org/',
         },
     ];
 
@@ -39,6 +43,14 @@ export async function onRequest(context) {
         {
             value: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini',
             text: 'ACL4SSR Online Full',
+        },
+                {
+            value: 'https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Lite.ini',
+            text: 'A大轻量',
+        },
+               {
+            value: 'https://github.com/pzyyll/Custom_OpenClash_Rules/blob/main/cfg/Custom_Clash.ini',
+            text: 'A大标准',
         },
     ];
 
