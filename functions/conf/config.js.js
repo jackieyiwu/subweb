@@ -36,14 +36,7 @@ export async function onRequest(context) {
     // 3. Advanced: Remote Config
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
     let remoteConfigOptions = [
-        {
-            value: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini',
-            text: 'ACL4SSR Online',
-        },
-        {
-            value: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini',
-            text: 'ACL4SSR Online Full',
-        },
+
                 {
             value: 'https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Lite.ini',
             text: 'A大轻量',
@@ -72,7 +65,7 @@ export async function onRequest(context) {
         },
         {
             title: 'GitHub',
-            link: 'https://github.com/Aethersailor/subweb',
+            link: 'https://github.com/jackieyiwu/subweb',
             target: '_blank',
         },
     ];
