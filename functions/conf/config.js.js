@@ -6,7 +6,7 @@ export async function onRequest(context) {
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
     const apiUrl = env.API_URL || 'http://127.0.0.1:25500';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
-    const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
+    const enableShortUrl = (env.ENABLE_SHORT_URL || 'fales').toLowerCase() !== 'false';
 
     // 2. Advanced: API Backends
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
