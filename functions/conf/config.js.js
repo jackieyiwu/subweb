@@ -21,7 +21,7 @@ export async function onRequest(context) {
         },
           {
             name: 'asailor',
-            url: 'https://https://api.asailor.org/',
+            url: 'https://api.asailor.org/',
         },
     ];
 
