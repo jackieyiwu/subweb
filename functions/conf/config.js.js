@@ -42,10 +42,10 @@ export async function onRequest(context) {
             text: '无泄露DNS小杯',
         },
                {
-            value: 'https://github.com/pzyyll/Custom_OpenClash_Rules/blob/main/cfg/Custom_Clash.ini',
+            value: 'https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini',
             text: '无泄露DNS中杯',
         },
-         { value: 'https://gh-proxy.com/https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
+         { value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
            text: '手搓最细',
          },
     ];
