@@ -4,9 +4,9 @@ export async function onRequest(context) {
     // 1. Base Configuration
     const siteName = env.SITE_NAME || 'Subconverter Web';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'http://127.0.0.1:25500';
+    const apiUrl = env.API_URL || 'http://apisub.ccwu.cc:25500';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
-    const enableShortUrl = (env.ENABLE_SHORT_URL || 'fales').toLowerCase() !== 'false';
+    const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
     // 2. Advanced: API Backends
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
@@ -31,18 +31,17 @@ export async function onRequest(context) {
 
     // 3. Advanced: Remote Config
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
-    let remoteConfigOptions = [
+let remoteConfigOptions = [
+    {
+        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/airules.ini',
+        text: 'AI内核模版',
+    },
+    {
+        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
+        text: '手搓最细',
+    },
+];
 
-                {
-            value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/airules.ini',
-            text: 'AI内核模版',
-        },
-
-        },
-         { value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
-           text: '手搓最细',
-         },
-    ];
 
     if (env.REMOTE_CONFIG) {
         try {
