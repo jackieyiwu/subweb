@@ -4,7 +4,7 @@ export async function onRequest(context) {
     // 1. Base Configuration
     const siteName = env.SITE_NAME || 'Subconverter Web';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'http://apisub.ccwu.cc:25500';
+    const apiUrl = env.API_URL || 'http://127.0.0.1:25500';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
     const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
