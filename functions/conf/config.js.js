@@ -45,6 +45,9 @@ export async function onRequest(context) {
             value: 'https://github.com/pzyyll/Custom_OpenClash_Rules/blob/main/cfg/Custom_Clash.ini',
             text: '无泄露DNS中杯',
         },
+         { value: https://gh-proxy.com/https://github.com/jackieyiwu/Custom_OpenClash_Rules/blob/main/cfg/Custom_Clash_Jacke.ini
+           text:'手搓最细',
+         },
     ];
 
     if (env.REMOTE_CONFIG) {
