@@ -4,7 +4,7 @@ export async function onRequest(context) {
     // 1. Base Configuration
     const siteName = env.SITE_NAME || 'Subconverter Web';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'http://127.0.0.1:25500';
+    const apiUrl = env.API_URL || 'http://apisub.ccwu.cc:25500';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
     const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
@@ -12,12 +12,8 @@ export async function onRequest(context) {
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
     let apiBackends = [
         {
-            name: 'play4fun',
+        name: '本地测试',
             url: apiUrl,
-        },
-        {
-            name: 'xeton',
-            url: 'https://sub.xeton.dev',
         },
           {
             name: 'asailor',
@@ -38,12 +34,10 @@ export async function onRequest(context) {
     let remoteConfigOptions = [
 
                 {
-            value: 'https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Lite.ini',
-            text: '无泄露DNS小杯',
+            value: 'https://github.com/jackieyiwu/Custom_OpenClash_Rules/blob/main/cfg/airules.ini',
+            text: 'AI内核模版',
         },
-               {
-            value: 'https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini',
-            text: '无泄露DNS中杯',
+
         },
          { value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
            text: '手搓最细',
