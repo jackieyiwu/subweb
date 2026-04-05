@@ -34,7 +34,7 @@ export async function onRequest(context) {
     let remoteConfigOptions = [
 
                 {
-            value: 'https://github.com/jackieyiwu/Custom_OpenClash_Rules/blob/main/cfg/airules.ini',
+            value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/airules.ini',
             text: 'AI内核模版',
         },
 
