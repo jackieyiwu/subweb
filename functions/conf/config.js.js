@@ -12,11 +12,11 @@ export async function onRequest(context) {
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
     let apiBackends = [
         {
-        name: '本地测试',
-            url: apiUrl,
+        name: '默认后端',
+            url: 'https://api.wcc.best/',
         },
           {
-            name: 'asailor',
+            name: 'asailor增加版',
             url: 'https://api.asailor.org/',
         },
     ];
@@ -33,8 +33,8 @@ export async function onRequest(context) {
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
 let remoteConfigOptions = [
     {
-        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/airules.ini',
-        text: 'ST彩播smart版',
+        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/yylx.yaml',
+        text: '遥遥领先',
     },
     {
         value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
