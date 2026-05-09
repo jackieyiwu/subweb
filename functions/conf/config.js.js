@@ -37,8 +37,8 @@ let remoteConfigOptions = [
         text: '遥遥领先',
     },
     {
-        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
-        text: '传统标准',
+        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/lite.ini',
+        text: '自用',
     },
 ];
 
