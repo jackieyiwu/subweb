@@ -34,11 +34,11 @@ export async function onRequest(context) {
 let remoteConfigOptions = [
     {
         value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/airules.ini',
-        text: 'AI内核模版',
+        text: 'ST彩播smart版',
     },
     {
         value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Jacke.ini',
-        text: '手搓最细',
+        text: '传统标准',
     },
 ];
 
