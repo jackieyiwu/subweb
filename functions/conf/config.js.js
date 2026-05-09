@@ -2,9 +2,9 @@ export async function onRequest(context) {
     const { env } = context;
 
     // 1. Base Configuration
-    const siteName = env.SITE_NAME || 'Subconverter Web';
+    const siteName = env.SITE_NAME || '本转换链接仅供技术交流,不得用于其它用途';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'http://apisub.ccwu.cc:25500';
+    const apiUrl = env.API_URL || 'https://api.wcc.best/';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
     const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
