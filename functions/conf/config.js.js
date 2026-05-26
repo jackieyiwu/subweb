@@ -41,7 +41,7 @@ let remoteConfigOptions = [
   
   {
         value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/clash_verge_rev_script_test.ini',
-        text: '遥遥领先',
+        text: '魔改群友',
     },
     
 ];
