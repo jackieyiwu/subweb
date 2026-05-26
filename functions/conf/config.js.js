@@ -13,7 +13,7 @@ export async function onRequest(context) {
     let apiBackends = [
         {
         name: '默认后端',
-            url: 'https://api.wcc.best/',
+            url: 'https://api.ynotu.cyou/sub',
         },
           {
             name: 'asailor增加版',
