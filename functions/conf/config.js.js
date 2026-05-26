@@ -4,7 +4,7 @@ export async function onRequest(context) {
     // 1. Base Configuration
     const siteName = env.SITE_NAME || '本转换链接仅供技术交流,不得用于其它用途';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'https://api.ynotu.cyou/sub';
+    const apiUrl = env.API_URL || 'https://api.asailor.org/';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
     const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
@@ -29,14 +29,21 @@ export async function onRequest(context) {
     // 3. Advanced: Remote Config
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
 let remoteConfigOptions = [
-    {
-        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/yylx.yaml',
-        text: '遥遥领先',
-    },
-    {
+  {
         value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/lite.ini',
         text: '自用',
     },
+
+  {
+        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/yylx.ini',
+        text: '遥遥领先',
+    },
+  
+  {
+        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/clash_verge_rev_script_test.ini',
+        text: '遥遥领先',
+    },
+    
 ];
 
 
