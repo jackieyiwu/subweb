@@ -29,20 +29,28 @@ export async function onRequest(context) {
     // 3. Advanced: Remote Config
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
 let remoteConfigOptions = [
-  {
-        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/lite.ini',
-        text: '自用',
-    },
-
-  {
-        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/yylx.ini',
-        text: '遥遥领先',
-    },
-  
-  {
-        value: 'https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/clash_verge_rev_script_test.ini',
-        text: '魔改群友',
-    },
+               {
+                text: "祖师爷A大标准版",
+                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini"
+              },
+              {
+                text: "自用单测自动精简版",
+                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/simple.ini"
+              },
+              {
+                text: "pzyyll完全SMART版(建议软路由OPENCLASH大内存使用)",
+                value: "https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Smart_Full.ini"
+              },
+              {
+                text: "CM大神_Online_Full_CF 识别多地区、CloudFlareCDN 分组 Worker节点专用(与Github同步)",
+                value: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_CF.ini"
+              },
+              {
+                text: "群友JS转换版)",
+                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/clash_verge_rev_script_test.ini"
+              },
+    
+              
     
 ];
 
