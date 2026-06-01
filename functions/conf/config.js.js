@@ -13,7 +13,7 @@ export async function onRequest(context) {
     let apiBackends = [
      {
             name: '自建后端无缓存',
-            url: 'https://api.ynotu.top/sub',
+            url: 'https://api.ynotu.top/',
         },
           {
             name: 'asailor增加版',
