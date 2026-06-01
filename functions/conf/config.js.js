@@ -49,7 +49,7 @@ let remoteConfigOptions = [
                 value: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_CF.ini"
               },
               {
-                text: "群友JS转换版)",
+                text: "万总S转换版",
                 value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/clash_verge_rev_script_test.ini"
               },
     
