@@ -37,7 +37,7 @@ let remoteConfigOptions = [
                 value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini"
               },
               {
-                text: "自用单测自动精简版",
+                text: "自用单组smart测速无国别简版",
                 value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/simple.ini"
               },
               {
