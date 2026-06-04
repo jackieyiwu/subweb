@@ -12,8 +12,8 @@ export async function onRequest(context) {
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
     let apiBackends = [
      {
-            name: '自建后端无缓存',
-            url: 'https://api.ynotu.top/',
+            name: '默认本站后端',
+            url: 'https://api.57995799.xyz/',
         },
           {
             name: 'asailor增加版',
