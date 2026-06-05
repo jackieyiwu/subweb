@@ -4,7 +4,7 @@ export async function onRequest(context) {
     // 1. Base Configuration
     const siteName = env.SITE_NAME || '本转换链接仅供技术交流,不得用于其它用途';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'http://127.0.0.1:25500';
+    const apiUrl = env.API_URL || 'https://api.57995799.xyz';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
     const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
