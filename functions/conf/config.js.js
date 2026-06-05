@@ -2,22 +2,22 @@ export async function onRequest(context) {
     const { env } = context;
 
     // 1. Base Configuration
-    const siteName = env.SITE_NAME || 'Subconverter Web';
+    const siteName = env.SITE_NAME || '本转换链接仅供技术交流,不得用于其它用途';
     const shortUrl = env.SHORT_URL || 'https://s.ops.ci';
-    const apiUrl = env.API_URL || 'http://127.0.0.1:25500';
+    const apiUrl = env.API_URL || 'https://api.57995799.xyz';
     // 解析 ENABLE_SHORT_URL，默认为 true，仅当显式设置为 'false' 时关闭
     const enableShortUrl = (env.ENABLE_SHORT_URL || 'true').toLowerCase() !== 'false';
 
     // 2. Advanced: API Backends
     // Priority: env.API_BACKENDS (JSON) > env.API_URL (Single Override) > Default List
     let apiBackends = [
-        {
-            name: '本地服务',
-            url: apiUrl,
+     {
+            name: '默认本站后端',
+            url: 'https://api.57995799.xyz/',
         },
-        {
-            name: '官方服务',
-            url: 'https://sub.xeton.dev',
+          {
+            name: 'asailor增加版',
+            url: 'https://api.asailor.org/',
         },
     ];
 
@@ -31,16 +31,33 @@ export async function onRequest(context) {
 
     // 3. Advanced: Remote Config
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
-    let remoteConfigOptions = [
-        {
-            value: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini',
-            text: 'ACL4SSR Online',
-        },
-        {
-            value: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini',
-            text: 'ACL4SSR Online Full',
-        },
-    ];
+let remoteConfigOptions = [
+               {
+                text: "祖师爷A大标准版",
+                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini"
+              },
+              {
+                text: "自用单组smart测速无国别简版",
+                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/simple.ini"
+              },
+              {
+                text: "pzyyll完全SMART版(建议软路由OPENCLASH大内存使用)",
+                value: "https://raw.githubusercontent.com/pzyyll/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash_Smart_Full.ini"
+              },
+              {
+                text: "CM大神_Online_Full_CF 识别多地区、CloudFlareCDN 分组 Worker节点专用(与Github同步)",
+                value: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_CF.ini"
+              },
+              {
+                text: "万总JS转换版",
+                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/clash_verge_rev_script_test.ini"
+              },
+    
+              
+    
+];
+
+
 
     if (env.REMOTE_CONFIG) {
         try {
