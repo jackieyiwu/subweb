@@ -362,7 +362,7 @@ export default {
 .short-url-btn {
   position: relative;
 }
-.short-url-btn :deep(.el-icon.is-loading) {
+.short-url-btn .el-icon.is-loading {
   position: absolute;
   left: 15px;
   top: 50%;
