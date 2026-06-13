@@ -33,8 +33,8 @@ export async function onRequest(context) {
     // Priority: env.REMOTE_CONFIG (JSON) > Default List
 let remoteConfigOptions = [
                {
-                text: "祖师爷A大标准版",
-                value: "https://raw.githubusercontent.com/jackieyiwu/openclashcfg/refs/heads/main/Custom_Clash.ini"
+                text: "自用标准版",
+                value: "https://raw.githubusercontent.com/jackieyiwu/openclashcfg/refs/heads/main/fina.ini"
               },
               {
                 text: "自用单组smart测速无国别简版",
