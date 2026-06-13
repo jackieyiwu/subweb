@@ -34,7 +34,7 @@ export async function onRequest(context) {
 let remoteConfigOptions = [
                {
                 text: "祖师爷A大标准版",
-                value: "https://raw.githubusercontent.com/jackieyiwu/Custom_OpenClash_Rules/refs/heads/main/cfg/Custom_Clash.ini"
+                value: "https://raw.githubusercontent.com/jackieyiwu/openclashcfg/refs/heads/main/Custom_Clash.ini"
               },
               {
                 text: "自用单组smart测速无国别简版",
